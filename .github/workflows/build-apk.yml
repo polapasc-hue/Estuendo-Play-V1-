@@ -17,13 +17,10 @@ jobs:
       with:
         node-version: 18
 
-    - name: Construir aplicación web
+    - name: Instalar dependencias y compilar
       run: |
         npm install
-        # Si tienes un comando de compilación (como npm run build), ponlo aquí:
-        # npm run build
+        # npm run build  # Descomenta esta línea si tu proyecto requiere un comando de compilación web
 
-    - name: Generar APK con PWABuilder CLI
-      run: |
-        npm install -g @pwabuilder/pwabuilder-cli
-        # O puedes empaquetar según los requerimientos de tu proyecto
+    - name: Listar archivos generados
+      run: ls -la
