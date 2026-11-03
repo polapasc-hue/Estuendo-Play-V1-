@@ -1,0 +1,5 @@
+SUBIDA EN UN SOLO PASO
+1. Descomprime este zip.
+2. Entra a la carpeta, selecciona TODO lo que hay dentro (Ctrl+A), incluida la carpeta .github
+3. Arrastralo a la pagina de GitHub: tu repositorio > Add file > Upload files. Commit changes.
+4. Ve a la pestaña Actions: "Build APK" se ejecuta solo (5-10 min). Luego Releases > ReproductorPro.apk
