@@ -17,8 +17,13 @@ jobs:
       with:
         node-version: 18
 
-    - name: Compilar APK con Bubblewrap (PWA)
+    - name: Construir aplicación web
       run: |
-        npm install -g @bubblewrap/cli
-        # Aquí puedes agregar los comandos de empaquetado si tu app usa una web manifest configurada,
-        # o puedes integrar una acción de PWABuilder.
+        npm install
+        # Si tienes un comando de compilación (como npm run build), ponlo aquí:
+        # npm run build
+
+    - name: Generar APK con PWABuilder CLI
+      run: |
+        npm install -g @pwabuilder/pwabuilder-cli
+        # O puedes empaquetar según los requerimientos de tu proyecto
