@@ -1,0 +1,23 @@
+REPRODUCTOR PRO v5 (reparado)
+
+CONTENIDO
+index.html, sw.js, manifest.webmanifest, icon-192.png, icon-512.png   -> la app web (PWA)
+debug.keystore, build-apk.yml                                        -> para generar el APK con escaneo automático
+
+A) ACTUALIZAR LA APP WEB (repositorio reproductor-pro-v2)
+1. GitHub > tu repositorio > Add file > Upload files.
+2. Sube index.html y sw.js (reemplazan a los anteriores) y haz Commit.
+3. Espera 1-2 minutos, abre la dirección de Pages y recarga. Si ves el aviso "Nueva versión disponible", toca Actualizar.
+
+B) APK CON ESCANEO AUTOMATICO DE MUSICA
+1. En el mismo repositorio sube tambien debug.keystore, manifest.webmanifest, icon-192.png e icon-512.png (si no estan).
+2. Add file > Create new file. Nombre exacto:  .github/workflows/build-apk.yml
+   Pega el contenido de build-apk.yml. Commit.
+3. Pestaña Actions > "Build APK" (5-10 min). Cuando tenga la marca verde:
+4. Pagina principal del repositorio > Releases > el mas reciente > descarga ReproductorPro.apk e instalalo.
+5. Al abrir la app acepta el permiso "Musica y audio": escanea todo el telefono sola.
+
+NOTAS
+- La pestaña IA y el boton TUNE solo funcionan dentro de Claude; fuera se ocultan.
+- Las letras se cargan desde un archivo .lrc tuyo; el boton "Buscar la letra en la web" abre una busqueda.
+- YouTube usa el reproductor oficial incrustado: no pasa por el ecualizador.
